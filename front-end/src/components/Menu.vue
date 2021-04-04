@@ -11,7 +11,7 @@
                     <router-link class="nav-link" to="/discover">Discover</router-link>
                     <router-link class="nav-link" to="/myposts">My Posts</router-link>
                     <router-link class="nav-link" to="/profile">My Profile</router-link>
-                    <a v-if="user" @click="logout">Logout</a>
+                    <button class="pure-button nav-link pure-button-primary" v-if="user" @click="logout">Logout</button>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-.nav-link {
+.nav-link, a {
   font-size: 1.5rem;
   color: #b7c1de;
 }
